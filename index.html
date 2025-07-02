@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>QR Code Generator</h1>
+            <p>Generate QR codes for URLs and text instantly</p>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="textInput">Enter URL or Text:</label>
+                    <textarea 
+                        id="textInput" 
+                        placeholder="Enter your URL or text here..."
+                        maxlength="1000"
+                    ></textarea>
+                </div>
+                
+                <div class="options">
+                    <div class="size-option">
+                        <label for="sizeSelect">QR Code Size:</label>
+                        <select id="sizeSelect">
+                            <option value="200">Small (200x200)</option>
+                            <option value="300" selected>Medium (300x300)</option>
+                            <option value="400">Large (400x400)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button id="generateBtn" class="generate-btn">
+                    Generate QR Code
+                </button>
+            </div>
+            
+            <div class="output-section">
+                <div id="qrContainer" class="qr-container">
+                    <div class="placeholder">
+                        <p>Your QR code will appear here</p>
+                    </div>
+                </div>
+                
+                <div id="downloadSection" class="download-section" style="display: none;">
+                    <button id="downloadBtn" class="download-btn">
+                        Download QR Code
+                    </button>
+                </div>
+            </div>
+            
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+            <div id="loadingMessage" class="loading-message" style="display: none;">
+                Generating QR Code...
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
