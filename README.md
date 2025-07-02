@@ -23,20 +23,27 @@ It allows users to enter any text or URL and instantly generate a downloadable Q
 
 ## 🧰 Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- [QR Code API or Library Used – optional to add here]
+- HTML
+- CSS
+- JavaScript
+- qrcode Python library
+- Flask REST API with CORS support
 
 ---
 
-## 📷 Screenshots
-
-![Screenshot](screenshot.png)
-
-> *(Upload a screenshot of your app and rename it `screenshot.png` to display here.)*
 
 ---
 
 ## 📁 Project Structure
+
+qr-code-generator/
+│
+├── index.html # Main HTML page
+├── styles.css # Styling
+├── script.js # QR generation logic
+├── app.py # (Optional - if used for backend or hosting)
+└── README.md # Project documentation
+
+
+
 
